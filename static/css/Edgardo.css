@@ -6,4 +6,12 @@
 .border {
   border: 1px solid red;
 }
+
+input {
+  width: 96%;
+}
+
+span {
+  width: 3%;
+}
 /*# sourceMappingURL=Edgardo.css.map */

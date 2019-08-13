@@ -27,4 +27,5 @@
 .icon-search:before {
   color: rgb(8, 165, 214);
   content: "\e901";
+  /* font-display: 5px; */
 }
