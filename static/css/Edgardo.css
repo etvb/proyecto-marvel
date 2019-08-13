@@ -1,4 +1,9 @@
-p {
-  color: red;
+.input {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.border {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=Edgardo.css.map */
