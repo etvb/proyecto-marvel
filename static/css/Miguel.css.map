@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,GAAG;CAAG",
     "sources": [
-        "style.sass"
+        "Miguel.sass"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "Miguel.css"
 }

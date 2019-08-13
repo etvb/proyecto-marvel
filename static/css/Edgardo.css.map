@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,GAAG;CAAG",
     "sources": [
-        "style.sass"
+        "Edgardo.sass"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "Edgardo.css"
 }
