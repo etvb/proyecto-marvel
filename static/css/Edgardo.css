@@ -1,17 +1,29 @@
-.input {
-  border: none;
-  border-bottom: 1px solid grey;
-}
-
 .border {
   border: 1px solid red;
 }
 
-input {
-  width: 96%;
+.input {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 97%;
 }
 
-span {
+.lupa {
   width: 3%;
+}
+
+.contenedor-img {
+  overflow: auto;
+  height: 10rem;
+}
+
+.contenedor-img::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contenedor-img::-webkit-scrollbar-thumb {
+  background-color: #babdbf;
+  border-radius: 5px;
+  height: 35px;
 }
 /*# sourceMappingURL=Edgardo.css.map */
