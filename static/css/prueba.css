@@ -1,0 +1,26 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.style-foot{
+width: 100%;
+background: #F7F7F7;
+display: inline-block;
+font-size: 12px;
+}
+
+.color_orange{
+    color: #FAAC58;
+}
+
+.pad{
+    padding-left: 3em;
+    padding-top: 40px;
+}
+
+.pad-foot{
+    padding-top: 10px;
+}
+.der{
+    text-align: right;
+}
