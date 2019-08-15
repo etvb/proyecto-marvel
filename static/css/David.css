@@ -1,0 +1,86 @@
+.menubar{
+background:#e6e6e5;  
+
+}
+
+.prueba{
+    margin-top: 25px;
+    margin-bottom:25px;
+    display:block;
+
+
+}
+
+.menup{
+    color:black;
+    font-size:1.2rem; 
+}
+
+
+.topcont{
+margin-top:40px;    
+display: flex;
+justify-content: center;
+
+}
+
+
+.cate {
+    width:200px;
+    height:250px;
+    margin-left: 20px;
+    margin-bottom:10px;
+    background-image: url("https://larepublica.pe/resizer/g0jF-jyJS6VkdGvvyho7r9o8MKE=/646x380/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/P4LBKGMEEBDTHDYNFUXFHSSCSY.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
+    padding-left:0px;
+    padding-right: 0px;    
+
+}
+
+.cate:hover{
+    opacity:0.85;
+}
+
+
+.icon{
+font-size: 2.5rem;
+}
+
+
+.categoria{
+    font-size:1.2rem;
+    margin:0px;
+}
+
+.colorw{
+    width: 100%;
+    height: 100%;
+opacity: 0;
+padding: 50px;}
+
+.colorw:hover{
+opacity: 1;
+background: -webkit-gradient(linear, left top, right top, from(rgba(161, 77, 67, 0.3)), to(rgba(233, 30, 98, 0.3)));
+background:linear-gradient(to right, salmon, #E91E63;)
+}
+
+@media (min-width: 768px) { 
+
+.prueba{
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.cate{
+    width:20%;
+}
+
+}
+
+
+
+
+
