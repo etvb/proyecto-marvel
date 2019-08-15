@@ -1,11 +1,30 @@
 body {
     font-family: 'Montserrat', sans-serif;
   }
+  .salmon-gradient {
+    padding: 4rem;
+    background: -webkit-gradient(linear, left top, right top, from(salmon), to(#E91E63));
+    background: linear-gradient(to right, salmon, #E91E63);
+  }
+  .custom-button {
+    padding: 1rem 3rem;
+    border: solid 2px;
+  }
+  
+  .custom-button.light {
+    color: white;
+    border-color: white;
+  }
+  
+  .custom-button.dark {
+    color: black;
+    border-color: black;
+  }
 
 .style-foot{
 width: 100%;
 background: #F7F7F7;
-display: inline-block;
+display:inline-block;
 font-size: 12px;
 }
 
