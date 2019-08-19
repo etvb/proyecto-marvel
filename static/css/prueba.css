@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
   }
   .salmon-gradient {
     padding: 4rem;
@@ -42,4 +44,18 @@ font-size: 12px;
 }
 .der{
     text-align: right;
+}
+
+.divfeatures{
+  margin: 0;
+  justify-content: center;
+}
+
+.espacio{
+  padding-left: 10.3%;
+}
+
+.espacio2{
+  padding-right: 0;
+  margin-left: 0;
 }

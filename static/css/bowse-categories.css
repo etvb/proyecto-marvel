@@ -55,8 +55,8 @@
 }
 
 .cate {
-  width: 200px;
-  height: 180px;
+  width: 250px;
+  height: 220px;
   margin-left: 20px;
   margin-bottom: 10px;
   padding-left: 0px;
@@ -97,7 +97,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
   }
   .cate {
     width: 20%;
