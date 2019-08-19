@@ -23,7 +23,6 @@ const urlApi = 'http://fundamentos.academlo.com/api/v1/'
 
 
 
-var cat;
 function getCategories (){
     const categoriesURL = `${urlApi}directories/5c82982e-b63e-4280-8287-4eba0e99716a/categories`
     fetch(categoriesURL)
@@ -44,8 +43,12 @@ function fillCategories(categoria) {
     var tbody = document.getElementById('prueba');
     var data = '';
 
+
+
+    var contador = -1;
     categoria.forEach( element => { 
-        data += '<div class="cate">'+
+        contador = contador + 1;
+        data += '<div class="cate" id="'+element.uuid+'" onclick="prob(this.id)">'+
         '<div class="colorw">'+
         '<p class="icon"><i class="fas fa-volume-down icon"></i></p>'+
         '<p class="categoria">'+element.name+'</p>'+
@@ -55,4 +58,25 @@ function fillCategories(categoria) {
     });
     tbody.innerHTML = data;
 }
+
+
+function prob (idid){
+    console.log(idid);
+    
+
+}
+
+// function pruebas(){
+//     const categoriesURL = `${urlApi}directories/5c82982e-b63e-4280-8287-4eba0e99716a/categories`
+//     fetch(categoriesURL)
+//     .then(response => {
+//         return response.json()
+//     })
+//     .then(categories => {
+
+
+// }
+
+// )
+// }
 
