@@ -122,7 +122,7 @@ function getProducts(){
             // console.log(products.categories);
             products.categories.forEach(indice => {
                 datos2 +=`
-                <div class="card col-12 col-sm-3 pl-0 pr-0 ml-3 mb-3">
+                <div class="card col-12 col-md-3 pl-0 pr-2 pr-md-0 ml-3 mb-3">
                     <div class="contenedor-img">
                         <img src="/static/img/marvel.png" class="card-img-top img" alt="imagen de la pag">
                     </div>
