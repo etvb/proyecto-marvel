@@ -152,9 +152,34 @@ function dibujar(){
     let direccion = document.location.href.split('?')[1];
     // console.log(direccion);
     let variables = direccion.split('&');
-    console.log(variables);
-    //  Imagn.innerHTML = variables[0]
-    headerProduct.innerHTML = unescape(variables[1]); 
+    let imagen = variables[0];
+   let headerProduct = unescape(variables[1]); 
+    let descripcion = unescape(variables[2]);
+    let url = variables[3];
+    // console.log(variables);
+    let data = `<div class="row justify-content-between"> 
+    <div class="container col-6">
+        <div class="row h-75 ">
+            <h2 >${headerProduct}</h2>
+            <p id="descripcion">${descripcion}</p>
+        </div>
+        <div class="row h-25 align-items-end justify-content-between">
+            <a href="${url}" target="_blanck" class="">
+                <button type="button" class="btn btn-outline-dark ">visit site</button>
+            </a>
+            <div class="">
+                <span>Share</span>
+                <a href="#"><span class="icon-facebook-with-circle h5 color"></span></a>
+                <a href="#"><span class="icon-twitter-with-circle h5 color"></span></a>
+             </div>
+        </div>
+        
+    </div>
+    <div class="col-6 contenedorFimg ">
+        <img class="w-100" src="${imagen}" alt="">
+    </div>
+</div>`
+    main.innerHTML = data;
 
 }
 

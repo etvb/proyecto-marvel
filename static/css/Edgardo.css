@@ -1,9 +1,10 @@
+@charset "UTF-8";
 body {
   font-family: 'Poppins', sans-serif;
 }
 
 .border {
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
 
 .input {
@@ -29,5 +30,28 @@ body {
   background-color: #babdbf;
   border-radius: 5px;
   height: 35px;
+}
+
+.contenedorFimg {
+  overflow: auto;
+  height: 435px;
+}
+
+.contenedorFimg::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contenedorFimg::-webkit-scrollbar-thumb {
+  background-color: #babdbf;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.tamaño {
+  height: 435px;
+}
+
+.color {
+  color: black;
 }
 /*# sourceMappingURL=Edgardo.css.map */
