@@ -23,7 +23,6 @@ const urlApi = 'http://fundamentos.academlo.com/api/v1/'
 
 
 
-var cat;
 function getCategories (){
     const categoriesURL = `${urlApi}directories/5c82982e-b63e-4280-8287-4eba0e99716a/categories`
     fetch(categoriesURL)
@@ -64,4 +63,25 @@ function fillCategories(categoria) {
     });
     tbody.innerHTML = data;
 }
+
+
+function prob (idid){
+    console.log(idid);
+    
+
+}
+
+// function pruebas(){
+//     const categoriesURL = `${urlApi}directories/5c82982e-b63e-4280-8287-4eba0e99716a/categories`
+//     fetch(categoriesURL)
+//     .then(response => {
+//         return response.json()
+//     })
+//     .then(categories => {
+
+
+// }
+
+// )
+// }
 
