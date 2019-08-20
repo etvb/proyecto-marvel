@@ -31,6 +31,7 @@ function getCategories (){
         return response.json()
     })
     .then(categories => {
+        console.log(categories)
 fillCategories(categories.categories);
 
 }
@@ -43,15 +44,23 @@ getCategories();
 function fillCategories(categoria) {
     var tbody = document.getElementById('prueba');
     var data = '';
-
     categoria.forEach( element => { 
-        data += '<div class="cate">'+
-        '<div class="colorw">'+
-        '<p class="icon"><i class="fas fa-volume-down icon"></i></p>'+
-        '<p class="categoria">'+element.name+'</p>'+
-        '<p class="listening">listening</p>'+
-      '</div>'+
-    '</div>'
+        data += `<a class="cate" href="category.html?${element.uuid}">
+        <div >
+            <div class="colorw">
+            <p class="icon"><i class="fas fa-volume-down icon"></i></p>
+            <p class="categoria">${element.name}</p>
+            <p class="listening">listening</p>
+           </div>
+        </div>
+        </a>`
+        //     data += '<div class="cate">'+
+    //     '<div class="colorw">'+
+    //     '<p class="icon"><i class="fas fa-volume-down icon"></i></p>'+
+    //     '<p class="categoria">'+element.name+'</p>'+
+    //     '<p class="listening">listening</p>'+
+    //   '</div>'+
+    // '</div>'
     });
     tbody.innerHTML = data;
 }
