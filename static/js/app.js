@@ -1,73 +1,7 @@
-//para el javascript
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const urlApi = "http://fundamentos.academlo.com/api/v1/"
 let headerCategory = document.getElementById("headerCategory");
-// let homeCategories = document.getElementById("homeCategories");
 let pagProducts = document.getElementById("contentProducts");
-// let datos = "";
 let datos2="";
 let tituloProduct="";
 
@@ -115,20 +49,22 @@ let tituloProduct="";
 // }
 
 function getProducts(){
-    let uuidProducto = document.location.href.split('?');
-    const products = `http://fundamentos.academlo.com/api/v1/categories/${uuidProducto[1]}/products`;
+    let uuidProducto = document.location.href.split('?'); //obtenemos el uuid de categorias, esta la obtenemos del url despues de darle clic a una categoria. Ese uuid lo mandamos en el <a> que esta en el archivo catjavascript,js
+    const products = `http://fundamentos.academlo.com/api/v1/categories/${uuidProducto[1]}/products`; //el uuid de categorias lo concatenamos en la ruta del api para obtener los productos de cada categorias
     
     fetch(products)
         .then(response => {
             return response.json();
         })
         .then(products => {
-            console.log(products);
-            headerCategory.innerHTML = products.name;
-
+            // console.log(products);
+            headerCategory.innerHTML = products.name; //titulo de la pag. que se muestra en HTML.
+//Recorremos el arreglo de productos y lo almacenamos en la variable datos2.
+//con esto le pasamos por la url las variables que ocupamos para crear la pag. del producto individual.
+//<a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}"></a>
             products.products.forEach(indice => {
                 datos2 +=`
-                <a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}">
+                <a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}"> 
                 <div class="card col-12 col-md-3 pl-0 pr-2 pr-md-0 ml-3 mb-3">
                     <div class="contenedor-img">
                         <img src="${indice.image}" class="card-img-top img" alt="imagen de la pag">
@@ -144,14 +80,15 @@ function getProducts(){
                 </a>`;
             });
             // console.log(datos2);
-            pagProducts.innerHTML = datos2;
+            pagProducts.innerHTML = datos2; //con esto hacemos que vea en el html los productos.
         });
 }
 
+//Pinta la pag. individual del producto
 function dibujar(){
-    let direccion = document.location.href.split('?')[1];
+    let direccion = document.location.href.split('?')[1];//obtenemos las variables de la url y lo guardamos en la variable direccion.
     // console.log(direccion);
-    let variables = direccion.split('&');
+    let variables = direccion.split('&');//separamos las variables y as gaurdamos en variables, es un arreglo lo que obtenemos
     let imagen = variables[0];
    let headerProduct = unescape(variables[1]); 
     let descripcion = unescape(variables[2]);
