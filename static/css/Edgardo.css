@@ -54,4 +54,10 @@ body {
 .color {
   color: black;
 }
+
+.pfixed {
+  position: relative;
+  bottom: -10px;
+  left: 0;
+}
 /*# sourceMappingURL=Edgardo.css.map */
