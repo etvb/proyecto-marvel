@@ -64,7 +64,7 @@ function getProducts(){
 //<a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}"></a>
             products.products.forEach(indice => {
                 datos2 +=`
-                <a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}"> 
+                <a href="index.html?${indice.uuid}"> 
                 <div class="card col-12 col-md-3 pl-0 pr-2 pr-md-0 ml-3 mb-3">
                     <div class="contenedor-img">
                         <img src="${indice.image}" class="card-img-top img" alt="imagen de la pag">
@@ -83,6 +83,59 @@ function getProducts(){
             pagProducts.innerHTML = datos2; //con esto hacemos que vea en el html los productos.
         });
 }
+//usaremos el ultimo nodo para dibujar la pag. del producto individual
+function dibujar(){
+    let uuidProductoIndividual = document.location.href.split('?'); 
+    let producto = `http://fundamentos.academlo.com/api/v1/products/${uuidProductoIndividual[1]}`
+    
+
+    fetch(producto)
+        .then(response => {
+            return response.json();
+        })
+        .then(producto => {
+            // console.log(producto);
+
+            let data = `<div class="row justify-content-between"> 
+    <div class="container col-12 col-sm-6">
+        <div class="row h-75 ">
+            <h2 >${producto.name}</h2>
+            <p id="descripcion">${producto.description}</p>
+        </div>
+        <div class="row h-25 align-items-end justify-content-between">
+            <a href="${producto.url}" target="_blanck" class="">
+                <button type="button" class="btn btn-outline-dark ">visit site</button>
+            </a>
+            <div class="">
+                <span>Share</span>
+                <a href="#"><span class="icon-facebook-with-circle h5 color"></span></a>
+                <a href="#"><span class="icon-twitter-with-circle h5 color"></span></a>
+             </div>
+        </div>
+        
+    </div>
+    <div class="col-10 mt-5 mt-sm-0 col-sm-6 contenedorFimg ">
+        <img class="w-100" src="${producto.image}" alt="imagen del producto">
+    </div>
+</div>`
+            console.log(data);
+    main.innerHTML = data;
+
+        })
+}
+
+
+
+
+// getDirectories();
+// getCategory();
+getProducts();
+dibujar();
+
+
+
+
+/*
 
 //Pinta la pag. individual del producto
 function dibujar(){
@@ -113,17 +166,14 @@ function dibujar(){
         
     </div>
     <div class="col-10 mt-5 mt-sm-0 col-sm-6 contenedorFimg ">
-        <img class="w-100" src="${imagen}" alt="">
+        <img class="w-100" src="${imagen}" alt="imagen del producto">
     </div>
 </div>`
     main.innerHTML = data;
-
 }
 
 
-// getDirectories();
-// getCategory();
-getProducts();
-dibujar();
 
 
+
+*/
