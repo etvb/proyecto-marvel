@@ -95,7 +95,7 @@ function dibujar(){
     let url = variables[3];
     // console.log(variables);
     let data = `<div class="row justify-content-between"> 
-    <div class="container col-6">
+    <div class="container col-12 col-sm-6">
         <div class="row h-75 ">
             <h2 >${headerProduct}</h2>
             <p id="descripcion">${descripcion}</p>
@@ -112,7 +112,7 @@ function dibujar(){
         </div>
         
     </div>
-    <div class="col-6 contenedorFimg ">
+    <div class="col-10 mt-5 mt-sm-0 col-sm-6 contenedorFimg ">
         <img class="w-100" src="${imagen}" alt="">
     </div>
 </div>`
