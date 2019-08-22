@@ -16,7 +16,7 @@
             categories.categories.forEach((indice,index) => {
                 if(index<8){
                     datos+=`
-                    <div class="cate col-2">
+                    <div class="cate col-sm-4 col-md-2 col-12">
                     <div class="colorw">
                     <p class="icon"><i class="fas fa-volume-down icon"></i></p>
                     <p class="categoria">${indice.name}</p>
