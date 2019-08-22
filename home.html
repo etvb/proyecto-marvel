@@ -99,38 +99,13 @@
       </div>
 
       <section>
-        <script>
-          const urlApi = "http://fundamentos.academlo.com/api/v1/";
-          function getCategory() {
-            const uuid = "directories/5c82982e-b63e-4280-8287-4eba0e99716a/categories";
-            const category = `${urlApi}${uuid}`;
-            fetch(category)
-              .then(response => {
-                return response.json();
-              })
-            then(categories => {
-              console.log(categories)
-              categories.categories.array.forEach((indice, index) => {
-                if (index > 8) {
-                  datos += `
-                            <div class="cate">
-                            <div class="colorw">
-                            <p class="icon"><i class="fas fa-volume-down icon"></i></p>
-                            <p class="categoria">${indice.name}</p>
-                            <p class="listening">listening</p>
-                            </div>
-                            </div>`;
-                }
-              })
-              homeCategories.innerHTML = datos;
-            });
-          }
-        </script>
 
+        <div>
+        
 
-      <!--<div class="container topcont pl-0 pr-0">
+      <div class="container flex-wrap topcont pl-0 pr-0" id="prueba">
       
-          <div class="prueba">
+          <!--<div class="prueba">
             <div class="cate" id="movies">
               <div class="colorw">
                 <p class="icon"><i class="fas fa-volume-down icon"></i></p>
@@ -139,7 +114,6 @@
               </div>
             </div>
 
-           
             <div class="cate" id="Cstores">
               <div class="colorw">
                 <p class="icon"><i class="fas fa-volume-down icon"></i></p>
@@ -194,7 +168,8 @@
             </div>
           </div>
         </div>-->
-      
+      </div>
+
       </section>
 
   <section>
@@ -218,6 +193,7 @@
           </div>
       </div>
   </section>   
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -227,7 +203,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="static/js/app.js"></script>
+    <!---<script src="static/js/app.js"></script>-->
+    <script src="static/js/category8.js"></script>
 </body>
 
 </html>
