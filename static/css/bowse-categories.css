@@ -24,37 +24,8 @@
           justify-content: center;
 }
 
-#movies {
-  background-image: url("https://larepublica.pe/resizer/g0jF-jyJS6VkdGvvyho7r9o8MKE=/646x380/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/P4LBKGMEEBDTHDYNFUXFHSSCSY.jpg");
-  background-size: cover;
-}
-
-#Cstores {
-  background-image: url("https://imgc.artprintimages.com/img/print/marvel-comics-retro-badge-featuring-captain-america_u-l-q134t3s0.jpg?h=550&w=550");
-  background-size: cover;
-}
-
-#Convenciones {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGLmgUchhiyZQMIoI2erurl4Pxb_Q7Ncas8ckQj5ZYvHYiwKq");
-  background-size: cover;
-}
-
-#cosplay {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgzADIYqP7z8Cp_P9xYsDs6TVZ4LfKTH5KaOOIyTZgGz1icvxww");
-  background-size: cover;
-}
-
-#vjuegos {
-  background-image: url("https://http2.mlstatic.com/marvel-vs-capcom-infinite-ps4-disco-videojuegos-fisico-D_NQ_NP_670643-MPE27593224032_062018-F.jpg");
-  background-size: cover;
-}
-
-#toys {
-  background-image: url("https://www.bigw.com.au/medias/sys_master/images/images/hdf/h89/11686281347102.jpg");
-  background-size: cover;
-}
-
 .cate {
+  background-image: url("https://larepublica.pe/resizer/g0jF-jyJS6VkdGvvyho7r9o8MKE=/646x380/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/P4LBKGMEEBDTHDYNFUXFHSSCSY.jpg");
   width: 200px;
   height: 180px;
   margin-left: 20px;
@@ -62,7 +33,6 @@
   padding-left: 0px;
   padding-right: 0px;
   color: white;
-  background-image: url("https://larepublica.pe/resizer/g0jF-jyJS6VkdGvvyho7r9o8MKE=/646x380/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/P4LBKGMEEBDTHDYNFUXFHSSCSY.jpg");
 }
 
 .cate:hover {
@@ -80,7 +50,7 @@
 
 .colorw {
   width: 100%;
-  height: 100%;
+  height: 80%;
   opacity: 0;
   padding: 20px;
 }
@@ -88,6 +58,7 @@
 .colorw:hover {
   opacity: 1;
   background: -webkit-gradient(linear, left top, right top, from(rgba(161, 77, 67, 0.3)), to(rgba(233, 30, 98, 0.3)));
+  background-size: 50%;
 }
 
 @media (min-width: 768px) {
@@ -110,5 +81,11 @@
 
 .pie {
   background: #F7F7F7;
+}
+
+.datos {
+  color: white;
+  width: 100%;
+  heigth: 100%;
 }
 /*# sourceMappingURL=bowse-categories.css.map */
