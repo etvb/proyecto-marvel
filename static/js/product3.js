@@ -20,18 +20,18 @@ function getProducts(products) {
   let html = ''
   for (let i = 0; i < 3; i++) {
     html += `
-  
+    
     <div class="card card-home col-12 col-md-3 pl-0 pr-0">
       <div class="contenedor-img">
-        <a href="./product.html?${products[i].uuid}" class="card-img-top img" alt="imagen de la pag">
+        <a href="./index.html?${products[i].uuid}" class="card-img-top img" alt="imagen de la pag">
           <img src="${products[i].image}" class="card-img-top">
-              </a>
+              
             </div>
         <div class="card-body d-flex flex-column justify-content-between overflow-hidden">
-          <a href="./product.html" class="text-decoration-none text-reset">
+         
             <h4 class="card-title">${products[i].name}</h4>
-          </a>
-          <p class="card-text">${products[i].description}</p>
+            <p class="card-text">${products[i].description}</p>
+            </a>
 
           
 
