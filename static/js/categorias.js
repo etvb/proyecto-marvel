@@ -12,7 +12,7 @@
             return response.json();
         })
         .then(categories=>{
-            console.log(categories)
+            // console.log(categories)
             categories.categories.forEach((indice,index) => {
                 var styles = `style= "background-image: url(${urls[index]}); background-size:cover; background-position:center"; background-repeat: repeat-x;`
 
@@ -30,7 +30,7 @@
 
                 }
             })
-            console.log(datos);
+            // console.log(datos);
             homeCategories.innerHTML = datos;
         });
     }

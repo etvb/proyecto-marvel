@@ -20,8 +20,8 @@ function getProducts(products) {
   let html = ''
   for (let i = 0; i < 3; i++) {
     html += `
-  <div class="card-deck pl-0 pr-0 divfeatures">
-    <div class="card card-home col-3 flex-column d-flex pl-0 pr-0">
+  
+    <div class="card card-home col-12 col-md-3 pl-0 pr-0">
       <div class="contenedor-img">
         <a href="./product.html?${products[i].uuid}" class="card-img-top img" alt="imagen de la pag">
           <img src="${products[i].image}" class="card-img-top">
@@ -32,10 +32,13 @@ function getProducts(products) {
             <h4 class="card-title">${products[i].name}</h4>
           </a>
           <p class="card-text">${products[i].description}</p>
-          <a href="https://flow.microsoft.com" target="_blank" button type="button" class="btn btn-outline-dark is-small d-block btn-sm-6 col-12">Visit site</a>
+
+          
+
+          <a href="${products[i].url}" target="_blank"> <button type="button" class="btn btn-outline-dark is-small d-block btn-sm-6 col-12">Visit site </button></a>
         </div>
       </div>
-    </div>`
+    `
   }
   appendHTML(html, 'featured-products')
 }
@@ -47,6 +50,7 @@ function getCategoryWithProducts() {
   fetch(urlCategory)
     .then(category => category.json())
     .then(category => {
+      console.log(category);
       getProducts(category.products)
     })
 }
