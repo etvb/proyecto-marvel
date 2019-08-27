@@ -64,7 +64,7 @@ function getProducts(){
 //<a href="index.html?${indice.image}&${indice.name}&${indice.description}&${indice.url}"></a>
             products.products.forEach(indice => {
                 datos2 +=`
-                <a href="index.html?${indice.uuid}"> 
+                <a href="producto.html?${indice.uuid}"> 
                 <div class="card col-12 col-md-3 pl-0 pr-2 pr-md-0 ml-3 mb-3">
                     <div class="contenedor-img">
                         <img src="${indice.image}" class="card-img-top img" alt="imagen de la pag">

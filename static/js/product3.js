@@ -23,7 +23,7 @@ function getProducts(products) {
     
     <div class="card card-home col-12 col-md-3 pl-0 pr-0">
       <div class="contenedor-img">
-        <a href="./index.html?${products[i].uuid}" class="card-img-top img" alt="imagen de la pag">
+        <a href="./producto.html?${products[i].uuid}" class="card-img-top img" alt="imagen de la pag">
           <img src="${products[i].image}" class="card-img-top">
               
             </div>
